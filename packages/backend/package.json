@@ -1,20 +1,24 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.11.0",
-  "dependencies": {
-    "fastify": "^5.3.3"
-  },
-  "devDependencies": {
-    "@types/node": "^22.15.30",
-    "typescript": "^5.8.3"
-  }
+	"name": "backend",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "tsc -p tsconfig.json",
+		"start": "node index.js",
+		"dev": "tsx watch src/index.ts"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@10.11.0",
+	"dependencies": {
+		"fastify": "^5.3.3"
+	},
+	"devDependencies": {
+		"@types/node": "^22.15.30",
+		"tsx": "^4.19.4",
+		"typescript": "^5.8.3"
+	}
 }

@@ -51,3 +51,17 @@ backend用の tsconfig.json を作成
   }
 }
 ```
+
+```bash
+# 開発動作確認用のツールを追加
+pnpm add -D tsx
+```
+
+package.jsonにdevスクリプトを追加
+```json
+{
+  "scripts": {
+    "dev": "tsx watch src/index.ts"
+  }
+}
+```
